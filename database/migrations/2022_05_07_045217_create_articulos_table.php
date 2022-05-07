@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('articulos', function (Blueprint $table) {
             $table->id();
+            $table->string('description');
+            $table->float('price');
+            $table->integer('stock');
             $table->timestamps();
         });
     }
